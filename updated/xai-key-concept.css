@@ -1,0 +1,65 @@
+.explainability-section, .explainability-intro {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.explainability-section h2,
+.explainability-intro h1 {
+    color: black;
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 16px;
+}
+
+.explainability-section p,
+.explainability-intro p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 16px;
+}
+
+.explainability-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.explainability-table th,
+.explainability-table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+    font-size: 16px;
+}
+
+.explainability-table th {
+    background: #3baea0;
+    color: #fff;
+    font-weight: bold;
+}
+
+.explainability-table tr:hover {
+    background: #e6f2ef;
+}
+
+@media (max-width: 768px) {
+    .explainability-section, .explainability-intro {
+        padding: 15px;
+    }
+
+    .explainability-section h2,
+    .explainability-intro h1 {
+        font-size: 22px;
+    }
+
+    .explainability-table th,
+    .explainability-table td {
+        padding: 10px;
+        font-size: 14px;
+    }
+}

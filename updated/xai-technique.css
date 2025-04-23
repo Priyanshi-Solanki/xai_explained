@@ -1,0 +1,54 @@
+/* Section Intro */
+.technique-intro {
+    margin: 40px 20px;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.technique-intro h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: #058679;
+}
+
+/* Technique Blocks */
+.technique {
+    max-width: 1100px;
+    margin: 30px auto;
+    background-color: #ffffff;
+    padding: 25px 30px;
+    border-left: 5px solid #118a7e;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+}
+
+.technique h2 {
+    color: #058679;
+    margin-bottom: 10px;
+}
+
+.technique ul {
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+.technique ul li {
+    margin-bottom: 8px;
+}
+
+.technique p {
+    margin-top: 10px;
+}
+
+
+.technique-link {
+    text-decoration: none;
+    color: #058679;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.technique-link:hover {
+    color: #118a7e;
+    text-decoration: underline;
+}
