@@ -60,8 +60,7 @@ xai-explained/
 ├── feature-attribution.css
 ├── example-based.css
 ├── surrogate-models.css
-├── visualization-techniques.css
-└── README.md
+└── visualization-techniques.css
 ```
 
 ## 🤝 Contributions
