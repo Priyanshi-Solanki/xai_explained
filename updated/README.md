@@ -67,9 +67,6 @@ xai-explained/
 
 Pull requests are welcome! Feel free to fork the repo and enhance it.
 
-## 📬 Feedback
-
-Share your thoughts or report bugs through the [feedback form](feedback.html).
 
 ## 📢 License
 
