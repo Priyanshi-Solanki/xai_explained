@@ -60,13 +60,17 @@ xai-explained/
 ├── feature-attribution.css
 ├── example-based.css
 ├── surrogate-models.css
-└── visualization-techniques.css
+├── visualization-techniques.css
+└── README.md
 ```
 
 ## 🤝 Contributions
 
 Pull requests are welcome! Feel free to fork the repo and enhance it.
 
+## 📬 Feedback
+
+Share your thoughts or report bugs through the [feedback form](feedback.html).
 
 ## 📢 License
 

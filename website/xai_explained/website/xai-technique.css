@@ -8,7 +8,7 @@
 .technique-intro h1 {
     font-size: 36px;
     margin-bottom: 10px;
-    color: #000000;
+    color: #058679;
 }
 
 /* Technique Blocks */
@@ -23,6 +23,7 @@
 }
 
 .technique h2 {
+    color: #058679;
     margin-bottom: 10px;
 }
 
