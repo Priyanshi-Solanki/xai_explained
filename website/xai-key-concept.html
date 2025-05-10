@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XAI Explained</title>
+    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="xai-key-concept.css">
+    
+</head>
+<body>
+    <!--navbar-->
+    <nav class="navbar">
+      <div class="logo">XAI Explained</div>
+      <ul class="nav-links">
+          <li><a href="what-is-xai.html">What is XAI?</a></li>
+          <li><a href="xai-key-concept.html">Key Concepts</a></li>
+          <li><a href="xai-technique.html">XAI Techniques</a></li>
+          <li><a href="application.html">Applications</a></li>
+          <li><a href="challenges.html">Challenges</a></li>
+          <li><a href="future.html">Future of XAI</a></li>
+          <li><a href="resource.html">Resources</a></li>
+      </ul>
+  </nav>
+
+
+  <!--Content-->
+  <div class="explainability-section">
+    <h2>Taxonomy of Explainability Methods</h2>
+    <p>
+        Explainability methods in AI can be systematically categorized using a three-axis taxonomy:
+        <b>Scope</b> (global vs. local), <b>Model specificity</b> (agnostic vs. specific), and 
+        <b>Stage of application</b> (pre-model, intrinsic, and post-hoc). This helps practitioners select appropriate methods 
+        based on the needs of their use case—whether they need broad insight into model logic, pinpoint explanations 
+        for specific predictions, or compatibility with any type of model.
+    </p>
+    <img src="images/taxonomy.png" alt="Taxonomy of Explainability Methods" style="max-width: 100%; height: auto; margin-top: 10px; border: 1px solid #ccc; padding: 5px;">
+    
+    <p>
+        <b>Scope:</b> Determines whether the explanation applies to the model as a whole (global) or to individual 
+        predictions (local). For example, Partial Dependence Plots provide global insights, while SHAP values can 
+        offer both local and global perspectives.
+    </p>
+    <p>
+        <b>Model Specificity:</b> Distinguishes whether a method is <b>model-agnostic</b> (usable with any model, 
+        like LIME or SHAP) or <b>model-specific</b> (tied to a particular architecture, like attention mechanisms in transformers).
+    </p>
+    <p>
+        <b>Stage of Application:</b> Refers to when explainability is introduced—<b>Pre-model</b> (e.g., feature selection),
+        <b>Intrinsic</b> (inherently interpretable models like decision trees), or <b>Post-hoc</b> (analysis applied after training,
+        like Grad-CAM or counterfactual explanations).
+    </p>
+    <p>
+        Understanding this taxonomy allows researchers and practitioners to design AI systems that are not only accurate,
+        but also trustworthy, transparent, and aligned with ethical standards.
+    </p>
+</div>
+
+
+<div class="explainability-intro">
+    <h1>Understanding Explainable AI (XAI) Concepts</h1>
+    <p>
+        Understanding how AI models make decisions is a crucial aspect of <b>Explainable AI (XAI)</b>. Since traditional AI models often function as 
+        "black boxes," where their internal logic is unclear, XAI techniques help <b>shed light on their decision-making processes</b>.
+    </p>
+    <p>
+        There are multiple ways to categorize these explainability methods, each providing insights into AI’s behavior at different levels. This page introduces 
+        three key distinctions in explainability:
+    </p>
+    <ul>
+        <li><b>Intrinsic vs. Post-hoc Explainability</b> – Is the model inherently interpretable, or do we need additional tools to understand it?</li>
+        <li><b>Model-Specific vs. Model-Agnostic Methods</b> – Do the explainability techniques work only for a specific model type, or can they be applied broadly?</li>
+        <li><b>Global vs. Local Explainability</b> – Are we explaining the model’s overall behavior, or are we analyzing individual predictions?</li>
+    </ul>
+    <p>
+        By understanding these fundamental concepts, we can better assess AI models in terms of <b>trust, fairness, and reliability</b> in real-world applications.
+    </p>
+</div>
+
+<div class="explainability-section">
+    <h2>Intrinsic vs. Post-hoc Explainability</h2>
+    <p>
+        AI models can be categorized based on how their decision-making process is understood. Some models are <b>intrinsically explainable</b>, meaning their 
+        structure makes interpretation straightforward. Others require <b>post-hoc</b> explainability techniques to analyze their predictions after training.
+    </p>
+    <p>
+        <b>Example:</b> A decision tree is <b>intrinsically explainable</b> since its decisions can be traced step by step. A deep neural network, however, 
+        needs post-hoc techniques like SHAP or LIME to understand how it reaches conclusions.
+    </p>
+
+    <table class="explainability-table">
+        <tr>
+            <th>Aspect</th>
+            <th>Intrinsic Explainability</th>
+            <th>Post-hoc Explainability</th>
+        </tr>
+        <tr>
+            <td><b>Definition</b></td>
+            <td>Models that are inherently interpretable</td>
+            <td>Explainability techniques applied after training</td>
+        </tr>
+        <tr>
+            <td><b>Examples</b></td>
+            <td>Decision Trees, Linear Regression</td>
+            <td>LIME, SHAP, Attention Maps</td>
+        </tr>
+        <tr>
+            <td><b>Complexity</b></td>
+            <td>Simple and easy to interpret</td>
+            <td>Often applied to complex black-box models</td>
+        </tr>
+        <tr>
+            <td><b>Transparency</b></td>
+            <td>High transparency as the model’s logic is clear</td>
+            <td>Limited transparency since the original model remains a black box</td>
+        </tr>
+        <tr>
+            <td><b>Accuracy vs. Explainability Trade-off</b></td>
+            <td>More explainable but sometimes less accurate for complex tasks</td>
+            <td>More accurate for high-dimensional data but harder to interpret</td>
+        </tr>
+        <tr>
+            <td><b>Real-Life Case</b></td>
+            <td>Loan approval systems using decision trees allow banks to justify why a loan was approved or rejected.</td>
+            <td>Medical AI models that predict disease risk using deep learning require SHAP or LIME to highlight key influencing factors.</td>
+        </tr>
+    </table>
+</div>
+
+<div class="explainability-section">
+    <h2>Model-Specific vs. Model-Agnostic Explainability</h2>
+    <p>
+        Explainability methods can either be <b>model-specific</b>, meaning they are designed for a particular AI model, or <b>model-agnostic</b>, 
+        meaning they can work with any model regardless of its structure.
+    </p>
+    <p>
+        <b>Example:</b> Feature importance in a decision tree is a <b>model-specific</b> explanation because it only applies to decision trees. 
+        LIME, however, is <b>model-agnostic</b> because it can be used to interpret any AI model.
+    </p>
+
+    <table class="explainability-table">
+        <tr>
+            <th>Aspect</th>
+            <th>Model-Specific</th>
+            <th>Model-Agnostic</th>
+        </tr>
+        <tr>
+            <td><b>Definition</b></td>
+            <td>Designed for a particular type of AI model</td>
+            <td>Works with any AI model, independent of structure</td>
+        </tr>
+        <tr>
+            <td><b>Flexibility</b></td>
+            <td>Limited to a specific model family</td>
+            <td>Can be applied to any black-box AI model</td>
+        </tr>
+        <tr>
+            <td><b>Examples</b></td>
+            <td>Feature importance in decision trees, attention maps in deep learning</td>
+            <td>LIME, SHAP, Partial Dependence Plots (PDP)</td>
+        </tr>
+        <tr>
+            <td><b>Computational Cost</b></td>
+            <td>Lower because it directly leverages the model’s structure</td>
+            <td>Higher because it requires extra computations</td>
+        </tr>
+        <tr>
+            <td><b>Real-Life Case</b></td>
+            <td>Speech recognition models using recurrent neural networks rely on attention maps to show which sounds influence predictions.</td>
+            <td>Online recommendation systems use SHAP to analyze how different factors (like past purchases) contribute to product suggestions.</td>
+        </tr>
+    </table>
+</div>
+
+<div class="explainability-section">
+    <h2>Global vs. Local Explainability</h2>
+    <p>
+        Explainability techniques can be categorized based on their <b>scope</b>:  
+        <b>Global explainability</b> provides insights into the overall behavior of a model, while <b>local explainability</b> explains specific predictions.
+    </p>
+    <p>
+        <b>Example:</b> In credit scoring, global explainability can reveal that income is the most important factor for loan approval, while local explainability 
+        can explain why a particular applicant was rejected.
+    </p>
+
+    <table class="explainability-table">
+        <tr>
+            <th>Aspect</th>
+            <th>Global Explainability</th>
+            <th>Local Explainability</th>
+        </tr>
+        <tr>
+            <td><b>Definition</b></td>
+            <td>Explains the overall model behavior</td>
+            <td>Explains individual predictions</td>
+        </tr>
+        <tr>
+            <td><b>Scope</b></td>
+            <td>High-level model transparency</td>
+            <td>Case-by-case interpretability</td>
+        </tr>
+        <tr>
+            <td><b>Computational Effort</b></td>
+            <td>Lower, as it analyzes general trends</td>
+            <td>Higher, as it requires individual case analysis</td>
+        </tr>
+        <tr>
+            <td><b>Real-Life Case</b></td>
+            <td>AI in hiring can show that experience level is the biggest factor in predicting job performance across all applicants.</td>
+            <td>AI in healthcare can explain why one patient was diagnosed with a condition by highlighting specific test results.</td>
+        </tr>
+    </table>
+</div>
+
+
+
+    <!-- page nav -->
+<div class="page-navigation">
+  <a href="what-is-xai.html" class="prev">&larr; Previous: What is XAI ?</a>
+  <a href="xai-technique.html" class="next">Next: XAI Techniques &rarr;</a>
+</div>
+    
+    <!--footer -->
+    <footer>
+        <div class="footer-container">
+          <div class="footer-section">
+            <h3>📩 Contact Me</h3>
+            <p>Email: <a href="mailto:priyanshissolanki7@gmail.com" id="email">priyanshissolanki7@gmail.com</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/priyanshisolanki/" id="linkedin" target="_blank">Priyanshi Solanki</a></p>
+          </div>
+      
+          <div class="footer-section">
+            <h3>📝 Feedback</h3>
+            <p>Have suggestions? Share your thoughts!</p>
+            <a href="feedback.html" target="_blank" class="btn">Give Feedback</a>
+          </div>
+      
+          <div class="footer-section">
+            <h3>🤝 Contribute</h3>
+            <p>Want to improve this project? Check out the repo!</p>
+            <a href="https://github.com/Priyanshi-Solanki/xai_explained.git" target="_blank" class="btn">Contribute on GitHub</a>
+          </div>
+      
+          <div class="footer-section">
+            <h3>💬 Join the Discussion</h3>
+            <p>Discuss XAI with the community!</p>
+            <a href="https://discord.gg/yourserver" target="_blank" class="btn">Join Discord</a>
+          </div>
+
+        </div>
+      
+        <div class="footer-bottom">
+          <p>© 2025 XAI Explained | Built by Priyanshi Solanki</p>
+        </div>
+    </footer>
+          
+</body>
+</html>

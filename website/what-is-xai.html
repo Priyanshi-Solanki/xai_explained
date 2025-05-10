@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XAI Explained</title>
+    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="what-is-xai.css">
+</head>
+<body>
+    <!--navbar-->
+    <nav class="navbar">
+        <div class="logo">XAI Explained</div>
+        <ul class="nav-links">
+            <li><a href="what-is-xai.html">What is XAI?</a></li>
+            <li><a href="xai-key-concept.html">Key Concepts</a></li>
+            <li><a href="xai-technique.html">XAI Techniques</a></li>
+            <li><a href="application.html">Applications</a></li>
+            <li><a href="challenges.html">Challenges</a></li>
+            <li><a href="future.html">Future of XAI</a></li>
+            <li><a href="resource.html">Resources</a></li>
+        </ul>
+    </nav>
+
+
+    <div class="what-is-xai">
+      <h2>Explainable AI (XAI)</h2>
+      <p>Explainable AI (XAI) refers to artificial intelligence systems designed to make their decision-making processes transparent and interpretable to humans. Unlike traditional black-box AI models, XAI provides insights into how and why an AI model arrived at a particular decision. This enhances trust, accountability, and fairness, making AI more reliable in critical applications like healthcare and finance. XAI techniques include LIME, SHAP, attention mechanisms, and rule-based models to improve interpretability. It plays a crucial role in bias detection, regulatory compliance, and ethical AI development.</p>
+    </div>
+
+  <div class="black-box">
+      <h2>Black Box Problem</h2>
+      <p>Imagine applying for a loan and receiving a rejection without any explanation. Traditional AI models work like this—they make decisions, but the reasoning remains hidden, much like a bank declining a loan without telling you why. This lack of transparency can lead to confusion, mistrust, and missed opportunities.</p>
+      <img src="images/loan model.webp" alt="How XAI Works Diagram" style="width: 100%; max-width: 1200px; display: block; margin: 20px auto; border-radius: 8px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);">
+      <p>Now, consider a system that not only approves or rejects your application but also explains its decision. It might state: 
+        <ul>
+          <li>Your credit score is too low.</li>
+          <li>Your debt-to-income ratio is high.</li>
+          <li>Increasing your savings could improve eligibility.</li>
+        </ul>
+        This is Explainable AI (XAI) in action. Just like a responsible financial advisor, XAI doesn’t just provide results; it offers clear justifications, helping users understand, trust, and make informed decisions based on AI-driven insights.</p>
+  </div>
+
+  <div class="features">
+    <h2>Key Features of XAI</h2>
+        <div class="features-container">
+            <div class="feature-box">
+                <h3>Transparency</h3>
+                <p>AI provides clear insights into how AI makes decisions, reducing the black-box effect.</p>
+              </div> 
+            
+            <div class="feature-box">
+                <h3>Interpretability</h3>
+                <p>AI outputs are understandable using techniques like SHAP and LIME.</p>
+            </div>
+
+            <div class="feature-box">
+                <h3>Trustworthiness & Reliability</h3>
+                <p>Ensures AI decisions are consistent, unbiased, and fair.</p>
+            </div>
+
+            <div class="feature-box">
+                <h3>Causality & Reasoning</h3>
+                <p> Moves beyond correlations to understand cause-and-effect relationships.</p>
+            </div>
+
+            <div class="feature-box">
+              <h3>Human-Centric Explanations</h3>
+              <p>Provides AI explanations tailored to different users, from experts to non-technical audiences.</p>
+            </div> 
+            <div class="feature-box">
+              <h3>Adversarial Robustness</h3>
+              <p>Detects and prevents adversarial attacks that attempt to manipulate AI models.</p>
+            </div>
+
+            <div class="feature-box">
+                <h3>Accountability & Compliance</h3>
+                <p>Ensures AI follows legal regulations like GDPR and HIPAA for transparency.</p>
+            </div>
+
+            <div class="feature-box">
+                <h3>Fairness & Bias Detection</h3>
+                <p>Identifies and mitigates biases to prevent discrimination in AI decisions.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="how-xai-works">
+      <h2>How XAI Works?</h2>
+      
+      <img src="images/how xai works.webp" alt="How XAI Works Diagram" style="width: 100%; max-width: 1200px; display: block; margin: 20px auto; border-radius: 8px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);">
+    
+      <p>Explainable AI (XAI) integrates interpretability into machine learning workflows to bridge the gap between black-box models and human understanding. The image-based framework shows a step-by-step approach for making AI decisions transparent, especially in critical tasks involving user interaction and accountability.</p>
+    
+      <ol>
+      <li><b>Training Data</b></li>
+      <ul>
+        <li>AI systems start by ingesting large volumes of training data relevant to the target task.</li>
+        <li>This data forms the foundation for the learning process, capturing patterns, behaviors, and outcomes.</li>
+      </ul>
+    
+      <li><b>New Machine Learning Process</b></li>
+      <ul>
+        <li>A new or refined ML algorithm is applied to the data.</li>
+        <li>This stage focuses on creating models that balance predictive performance with interpretability.</li>
+        <li>It may include specialized design choices to enable explainability from the start.</li>
+      </ul>
+    
+      <li><b>Explainable Model</b></li>
+      <ul>
+        <li>Instead of relying on opaque neural networks alone, XAI emphasizes models that can be explained post-training.</li>
+        <li>This may involve inherently interpretable models (e.g., decision trees) or black-box models combined with explainer modules.</li>
+      </ul>
+    
+      <li><b>Explanation Interface</b></li>
+      <ul>
+        <li>This layer serves as the communication bridge between the model and the user.</li>
+        <li>It provides real-time, human-friendly explanations of how and why decisions were made.</li>
+        <li>Includes visual aids like charts, decision paths, or text-based reasoning.</li>
+      </ul>
+    
+      <li><b>User Feedback & Trust</b></li>
+      <ul>
+        <li>Through the explanation interface, users receive clarity and context.</li>
+        <li>This helps them evaluate the model's decisions, build trust, and determine reliability.</li>
+        <li>Users gain the ability to assess whether the model succeeded or failed—and most importantly—why.</li>
+      </ul>
+      </ol>
+    
+    
+      <p>This XAI pipeline ensures that the AI system not only delivers high-performing results but also provides clarity and accountability, empowering users to confidently make informed decisions alongside AI systems.</p>
+    </div>
+    
+
+
+  <script src="script.js"></script>
+    <!--page navigation-->
+
+    <div class="page-navigation">
+      <span></span>
+      <a href="xai-key-concept.html" class="next">Next: XAI Key Concepts &rarr;</a>
+    </div>
+    
+    <!--footer -->
+    <footer>
+        <div class="footer-container">
+          <div class="footer-section">
+            <h3>📩 Contact Me</h3>
+            <p>Email: <a href="mailto:priyanshissolanki7@gmail.com" id="email">priyanshissolanki7@gmail.com</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/priyanshisolanki/" id="linkedin" target="_blank">Priyanshi Solanki</a></p>
+          </div>
+      
+          <div class="footer-section">
+            <h3>📝 Feedback</h3>
+            <p>Have suggestions? Share your thoughts!</p>
+            <a href="feedback.html" target="_blank" class="btn">Give Feedback</a>
+          </div>
+      
+          <div class="footer-section">
+            <h3>🤝 Contribute</h3>
+            <p>Want to improve this project? Check out the repo!</p>
+            <a href="https://github.com/Priyanshi-Solanki/xai_explained.git" target="_blank" class="btn">Contribute on GitHub</a>
+          </div>
+      
+          <div class="footer-section">
+            <h3>💬 Join the Discussion</h3>
+            <p>Discuss XAI with the community!</p>
+            <a href="https://discord.gg/yourserver" target="_blank" class="btn">Join Discord</a>
+          </div>
+
+        </div>
+      
+        <div class="footer-bottom">
+          <p>© 2025 XAI Explained | Built by Priyanshi Solanki</p>
+        </div>
+    </footer>
+          
+</body>
+</html>
