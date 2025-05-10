@@ -1,7 +1,7 @@
 
 # 🌐 XAI Explained Website
 
-Welcome to the **XAI Explained** project — a fully responsive, educational website designed to demystify Explainable AI (XAI). This site is built with HTML, CSS, and a touch of JavaScript (optional) to engage both technical and non-technical audiences.
+Welcome to the **XAI Explained** project — a fully responsive, educational website designed to demystify Explainable AI (XAI). This site is built with HTML, CSS, and JavaScript to engage both technical and non-technical audiences.
 
 ## 🧠 Overview
 
@@ -9,7 +9,7 @@ Explainable AI (XAI) is essential for building trust in AI systems. This project
 
 ## 📄 Pages Included
 
-There are 11 HTML pages in this site:
+There are 7 HTML pages in this site:
 
 ### 🔹 Main Pages (7)
 
@@ -21,13 +21,6 @@ There are 11 HTML pages in this site:
 6. **future.html** – Future of explainable artificial intelligence.
 7. **resource.html** – External links, datasets, and papers.
 
-### 🔸 Subpages (4)
-Each subpage deep-dives into a specific XAI technique.
-
-1. **feature-attribution.html**
-2. **example-based.html**
-3. **surrogate-models.html**
-4. **visualization-techniques.html**
 
 ## 🎨 Styling
 
@@ -46,10 +39,6 @@ xai-explained/
 ├── challenges.html
 ├── future.html
 ├── resource.html
-├── feature-attribution.html
-├── example-based.html
-├── surrogate-models.html
-├── visualization-techniques.html
 ├── what-is-xai.css
 ├── xai-key-concept.css
 ├── xai-technique.css
@@ -57,10 +46,7 @@ xai-explained/
 ├── challenges.css
 ├── future.css
 ├── resource.css
-├── feature-attribution.css
-├── example-based.css
-├── surrogate-models.css
-└── visualization-techniques.css
+└── README.md
 ```
 
 ## 🤝 Contributions
