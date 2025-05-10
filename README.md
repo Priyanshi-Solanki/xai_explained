@@ -9,7 +9,7 @@ Explainable AI (XAI) is essential for building trust in AI systems. This project
 
 ## 📄 Pages Included
 
-There are 7 HTML pages in this site:
+There are 7 HTML pages in this site & a feedback form:
 
 ### 🔹 Main Pages (7)
 
@@ -46,6 +46,9 @@ xai-explained/
 ├── challenges.css
 ├── future.css
 ├── resource.css
+├── feedback.html
+├── feedback.css
+├── feedback.js
 └── README.md
 ```
 
