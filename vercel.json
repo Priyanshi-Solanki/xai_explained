@@ -1,5 +1,5 @@
 {
   "rewrites": [
-    { "source": "/", "destination": "/website/what-is-xai.html" }
+    { "source": "/(.*)", "destination": "/website/$1" }
   ]
 }
