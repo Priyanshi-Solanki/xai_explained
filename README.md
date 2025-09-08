@@ -56,10 +56,6 @@ xai-explained/
 
 Pull requests are welcome! Feel free to fork the repo and enhance it.
 
-## 📬 Feedback
-
-Share your thoughts or report bugs through the [feedback form](feedback.html).
-
 ## 📢 License
 
 This project is licensed under the MIT License — see the LICENSE file for details.
