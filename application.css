@@ -1,0 +1,56 @@
+.application {
+  padding: 40px;
+  background-color: #f5f7fa;
+  text-align: center;
+}
+
+.slideshow-container {
+  max-width: 900px;
+  margin: auto;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+#slide-image {
+  width: 100%;
+  border-bottom: 1px solid #ddd;
+}
+
+.arrow-buttons {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.arrow-buttons button {
+  background-color: #00724D;
+  border: none;
+  color: white;
+  padding: 10px 16px;
+  font-size: 24px;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+}
+
+.arrow-buttons button:hover {
+  background-color: #005C3D;
+}
+
+.slide-text {
+  padding: 20px;
+  text-align: left;
+}
+
+.slide-text h2 {
+  color: #333;
+  margin-top: 0;
+}
+
+.slide-text p {
+  color: #555;
+  line-height: 1.6;
+
+}
